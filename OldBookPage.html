@@ -1,0 +1,478 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Book</title>
+        <meta charset="utf-8">
+        <!-- link slider css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="HomePage.css">
+        <link rel="stylesheet" href="OldBookPage.css">
+        <!-- <link rel="stylesheet" href="TLOTR.css"> -->
+        <link rel="stylesheet" href="Images/">
+        <link rel="stylesheet" href="sub.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="cover-div" id="cover-div"></div>
+        <!-- <section class="filter-sidebar" id="filter-sidebar"> -->
+            <div class="filter-sidebar" id="filter-sidebar">
+                <i class="fa-solid fa-angle-left sidebar-hide" id="sidebar-hide"></i>
+                <button id="btn">Tìm kiếm</button>
+                <h3>Thể Loại</h3>
+                <h4>Hư Cấu</h4>
+                <ul class="hu-cau-submenu">
+                    <li><input type="checkbox"> Giả tưởng</li>
+                    <li><input type="checkbox"> Khoa học viễn tưởng</a></li>
+                    <li><input type="checkbox"> Lãng mạn</li>
+                    <li><input type="checkbox"> Kinh dị</li>
+                    <li><input type="checkbox"> Manga</li>
+                    <li><input type="checkbox"> Comic</li>
+                    <li><input type="checkbox"> Trinh thám</li>
+                    <li><input type="checkbox"> Cổ tích - Ngụ ngôn</li>
+                    <li><input type="checkbox"> Dã Sử</li>
+                    <li><input type="checkbox"> Light Novel</li>
+                    <li><input type="checkbox"> Phiêu lưu</li>
+                    <li><input type="checkbox"> Thiếu nhi</li>
+                    <li><input type="checkbox"> Hài hước</li>
+                    <li><input type="checkbox"> Kỳ ảo</li>
+                    <li><input type="checkbox"> Khác</li>
+                </ul>
+                <h4>Phi hư cấu</h4>
+                <ul class="phi-hu-cau-submenu">
+                    <li><input type="checkbox"> Kinh tế</li>
+                    <li><input type="checkbox"> Tâm lý - Giáo dục</li>
+                    <li><input type="checkbox"> Lịch sử - Địa lý</li>
+                    <li><input type="checkbox"> Y học -Sức khỏe</li>
+                    <li><input type="checkbox"> Khoa học</li>
+                    <li><input type="checkbox"> Triết học</li>
+                    <li><input type="checkbox"> Nghệ thuật</li>
+                    <li><input type="checkbox"> Tôn giáo</li>
+                    <li><input type="checkbox"> Ẩm thực</li>
+                    <li><input type="checkbox"> Công nghệ</li>
+                    <li><input type="checkbox"> Tự nhiên</li>
+                    <li><input type="checkbox"> Gia đình</li>
+                    <li><input type="checkbox"> Thẩm mỹ</li>
+                    <li><input type="checkbox"> Khác</li>
+                </ul>
+                <h3>Giá cả</h3>
+                <ul class="gia-ca-submenu">
+                    <li><input type="checkbox"> Giảm giá</li>
+                    <li><input type="checkbox"> Miễn phí</li>
+                </ul>
+                <h3>Đánh giá</h3>
+                <ul class="danh-gia-submenu">
+                    <li><input type="checkbox"> > 4.5 <i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><input type="checkbox"> > 4.0 <i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><input type="checkbox"> > 3.5 <i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+                <h3>Quốc gia</h3>
+                <ul class="quoc-gia-submenu">
+                    <li><input type="checkbox"> Trong nước</li>
+                    <li><input type="checkbox"> Ngoài nước</li>
+                </ul>
+                <h3>Mô tả</h3>
+                <textarea name="mo-ta-textare" id="mo-ta-textare"></textarea>
+            </div>
+        <!-- </section> -->
+
+        <header class="header" id="header">
+            <div class="header-1">
+                <a href="HomePage.html" class="logo">
+                    <img src="./Images/Logo-Flippy-Book-3.png" alt="logo" class="logo">
+                </a>
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="Tên sách, tác giả..." id="search-box">
+                    <label for="search-box" class="fas-fa-search"><i class="fa-solid fa-magnifying-glass"></i></label>         
+                </form>
+                
+                <div class="account"> 
+                    <ul> 
+                        <li style="position: relative;">
+                          <a href="CartPage.html"><img src="./Images/cart.png" alt="" class="cart"></a>
+                          <div class="so-hang">4</div>  
+                        </li>                     
+                        <li>
+                            <a href="#" class="dang-nhap" id="dang-nhap">ĐĂNG NHẬP</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dang-ky" id = "dang-ky">ĐĂNG KÝ </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <img src="./Images/filter.png" alt=""  class="toggle-btn" id="toggle-btn">
+                <a href="HomePage.html">TRANG CHỦ</a>
+                <!-- <a href="#ke-sach">KỆ SÁCH</a> -->
+                <a href="#xep-hang">XẾP HẠNG</a>
+                <!-- <a href="#dich-vu">DỊCH VỤ</a> -->
+                <a href="OldBookPage.html">SÁCH CŨ</a>
+                <a href="ContactPage.html">LIÊN HỆ</a>
+                <!-- <a href="#">GIỚI THIỆU</a> -->
+            </nav>
+        </header>
+        <div class="height"></div>
+
+        <div class="old-book-search">
+            <h1>Bạn muốn tìm sách cũ nào?</h1>
+            <form action="" class="old-book-search-form">
+                <input type="search" name="" placeholder="Nhập tên sách cũ cần tìm" id="old-book-search-box">
+                <label for="old-book-search-box" class="fas-fa-search"><i class="fa-solid fa-magnifying-glass"></i></label>         
+            </form>
+            <h3>Bán sách cũ của bạn <button>Tại đây</button></h3>
+        </div>
+
+        <div class="main-content-container">
+            
+            <div class="old-book-filter">
+                <div class="old-book-filter-head">
+                    <img src="./Images/filter.png" alt="">
+                    <h3>Bộ lọc</h3>
+                </div>
+                <div class="old-book-filter-body">
+                    <h3>Thể Loại</h3>
+                    <h4>Hư Cấu</h4>
+                    <ul class="hu-cau-submenu">
+                        <li><input type="checkbox"> Giả tưởng</li>
+                        <li><input type="checkbox"> Khoa học viễn tưởng</a></li>
+                        <li><input type="checkbox"> Lãng mạn</li>
+                        <li><input type="checkbox"> Kinh dị</li>
+                        <li><input type="checkbox"> Manga</li>
+                        <li><input type="checkbox"> Comic</li>
+                        <li><input type="checkbox"> Trinh thám</li>
+                        <li><input type="checkbox"> Cổ tích - Ngụ ngôn</li>
+                        <li><input type="checkbox"> Dã Sử</li>
+                        <li><input type="checkbox"> Light Novel</li>
+                        <li><input type="checkbox"> Phiêu lưu</li>
+                        <li><input type="checkbox"> Thiếu nhi</li>
+                        <li><input type="checkbox"> Hài hước</li>
+                        <li><input type="checkbox"> Kỳ ảo</li>
+                        <li><input type="checkbox"> Khác</li>
+                    </ul>
+                    <h4>Phi hư cấu</h4>
+                    <ul class="phi-hu-cau-submenu">
+                        <li><input type="checkbox"> Kinh tế</li>
+                        <li><input type="checkbox"> Tâm lý - Giáo dục</li>
+                        <li><input type="checkbox"> Lịch sử - Địa lý</li>
+                        <li><input type="checkbox"> Y học -Sức khỏe</li>
+                        <li><input type="checkbox"> Khoa học</li>
+                        <li><input type="checkbox"> Triết học</li>
+                        <li><input type="checkbox"> Nghệ thuật</li>
+                        <li><input type="checkbox"> Tôn giáo</li>
+                        <li><input type="checkbox"> Ẩm thực</li>
+                        <li><input type="checkbox"> Công nghệ</li>
+                        <li><input type="checkbox"> Tự nhiên</li>
+                        <li><input type="checkbox"> Gia đình</li>
+                        <li><input type="checkbox"> Thẩm mỹ</li>
+                        <li><input type="checkbox"> Khác</li>
+                    </ul>
+                    <h3>Ngôn ngữ</h3>
+                    <ul>
+                        <li><input type="checkbox"> Tiếng Việt</li>
+                        <li><input type="checkbox"> Tiếng nước ngoài</li>
+                    </ul>
+                    <h3>Quốc gia</h3>
+                    <ul>
+                        <li><input type="checkbox"> Trong nước</li>
+                        <li><input type="checkbox" name="" id=""> Ngoài nước</li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="old-book-list">
+                <div class="old-book-list-head">
+                    <h3><i class="fa-solid fa-book"></i> Sách cũ</h3>
+                </div>
+                <div class="old-book-list-body">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./Images/textbookof.jpeg" alt="Textbook of Biochemistry for">
+                                <h4 title="Textbook Of Biochemistry For Medical Students">Textbook Of Biochemistry For Medical Students</h4>
+                                <h5>Kannan Vaidyannathan</h5>
+                                <p>₫50 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/familylife.png" alt="">
+                                <h4 title="Family Life">Family Life</h4>
+                                <h5>Akhil Sharma</h5>
+                                <p>₫15 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/tieng anh cho.jpg" alt=""Tiếng Anh Cho Người Bắt Đầu>
+                                <h4 title="Tiếng Anh Cho Người Bắt Đầu">Tiếng Anh Cho Người Bắt Đầu</h4>
+                                <h5>Trang Anh & Minh Trang</h5>
+                                <p>₫65 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/harrypotter.jpg" alt="Harry Potter And The Secret Chamber">
+                                <h4 title="Harry Potter And The Secret Chamber">Harry Potter And The Secret Chamber</h4>
+                                <h5>J. K. ROWLING</h5>
+                                <p>₫18 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/toicharley.jpg" alt="">
+                                <h4 title="Tôi charley Và Hành Trình Nước Mỹ">Tôi charley Và Hành Trình Nước Mỹ</h4>
+                                <h5>Join Steinbeck</h5>
+                                <p>₫10 000</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./Images/vuotnienlon.jpg" alt="">
+                                <h4 title="Vượt Biển Lớn">Vượt Biển Lớn</h4>
+                                <h5>Nguyễn Thái Duy</h5>
+                                <p>₫25 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/maigret.jpg" alt="">
+                                <h4 title="Maigret And The Loner">Maigret And The Loner</h4>
+                                <h5>Georges Simenon</h5>
+                                <p>₫70 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/tiengchimhot.png" alt="">
+                                <h4 title="Tiếng Chim Hót Trong Bụi Mận Gai">Tiếng Chim Hót Trong Bụi Mận Gai</h4>
+                                <h5>Colleen McCullough</h5>
+                                <p>₫140 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/luyende.jpg" alt="">
+                                <h4 title="Luyện Đề THPT Quốc Gia Vật Lý">Luyện Đề THPT Quốc Gia Vật Lý</h4>
+                                <h5>Trần Văn Đại</h5>
+                                <p>₫90 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/academic skill.jpg" alt="">
+                                <h4 title="Academic Skills For Ielts">Academic Skills For Ielts</h4>
+                                <h5>Morgan Terry</h5>
+                                <p>₫35 000</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./Images/sinhrala.jpg" alt="">
+                                <h4 title="Sinh Ra Là Thế">Sinh Ra Là Thế</h4>
+                                <h5>Nguyễn Ngọc Thuần</h5>
+                                <p>₫50 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/khihoitho.png" alt="">
+                                <h4 title="Khi Hơi Thở Hóa Tinh Không">Khi Hơi Thở Hóa Tinh Không</h4>
+                                <h5>Paul Kalanithi</h5>
+                                <p>₫15 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/anothergreat.png" alt="">
+                                <h4 title="Another Great Day At Sea">Another Great Day At Sea</h4>
+                                <h5>Geoff Dyer</h5>
+                                <p>₫30 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/photograph.png" alt="">
+                                <h4 title="Photographs">Photographs</h4>
+                                <h5>Chris Steele-Perlins</h5>
+                                <p>₫15 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/timduong.png" alt="">
+                                <h4 title="Tìm Đường Tuổi 20s">Tìm Đường Tuổi 20s</h4>
+                                <h5>Trần Thị Thùy Trang</h5>
+                                <p>₫17 000</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./Images/toi tai gioi.png" alt="">
+                                <h4 title="Tôi Tài Giỏi Bạn Cũng Thế">Tôi Tài Giỏi Bạn Cũng Thế</h4>
+                                <h5>Adam Khoo</h5>
+                                <p>₫20 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/nhagiakim.png" alt="">
+                                <h4 title="">Nhà Giả Kim</h4>
+                                <h5>Paulo Coelho</h5>
+                                <p>₫65 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/dacnhantam.png" alt="">
+                                <h4 title="Đắc Nhân Tâm">Đắc Nhân Tâm</h4>
+                                <h5>Dale Carnegi</h5>
+                                <p>₫45 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/doigio.png" alt="">
+                                <h4 title="Đồi Gió Hú">Đồi Gió Hú</h4>
+                                <h5>Ellis Bell</h5>
+                                <p>₫45 000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/thelastday.png" alt="">
+                                <h4 title="The Last Day Of Roger Federer">The Last Day Of Roger Federer</h4>
+                                <h5>Geoff Dyer</h5>
+                                <p>₫25 000</p>
+                            </a>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="pagination-buttons">
+                    <button type="button" class="page-btn start-page"><i class="fa-solid fa-less-than"></i><i class="fa-solid fa-less-than"></i></button>
+                    <button type="button" class="page-btn prev-page"><i class="fa-solid fa-less-than"></i></button>
+                    <button type="button" class="page-btn active">1</button>
+                    <button type="button" class="page-btn">2</button>
+                    <button type="button" class="page-btn">3</button>
+                    <button type="button" class="page-btn">4</button>
+                    <button type="button" class="page-btn">5</button>
+                    <button type="button" class="page-btn">6</button>
+                    <button type="button" class="page-btn">7</button>
+                    <button type="button" class="page-btn">8</button>
+                    <button type="button" class="page-btn">...</button>
+                    <button type="button" class="page-btn">21</button>
+                    <button type="button" class="page-btn">22</button>
+                    <button type="button" class="page-btn next-page"><i class="fa-solid fa-greater-than"></i></button>
+                    <button type="button" class="page-btn end-page"><i class="fa-solid fa-greater-than"></i><i class="fa-solid fa-greater-than"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="company">
+                <img src="./Images/Logo-Flippy-Book-3.png" alt="logo" class="logo">
+                <!-- <h1>P8PR</h3> -->
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>    
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <h3>Danh mục</h3>
+                    <li><a href="HomePage.html">Trang chủ</a></li>
+                    <li><a href="#xep-hang">Xếp hạng</a></li>
+                    <li><a href="OldBookPage.html">Sách cũ</a></li>
+                    <li><a href="ContactPage.html">Liên Hệ</a></li>
+                </ul>
+                <ul>
+                    <h3>Thông tin</h3>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Hỏi đáp</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+                <ul>
+                    <h3>Chính sách</h3>
+                    <li><a href="#">Điều khoản & Chính sách</a></li>
+                    <li><a href="#">Bảo mật</a></li>
+                    <li><a href="#">Khách hàng</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul>
+                    <h3>Liên hệ</h3>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> 0923 526 642</a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i> flippybook@gmail.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> Trần Đại Nghĩa, Đà Nẵng, Việt Nam</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <div class="form-box login-form" id="login-form">
+            <i class="fa-solid fa-xmark close" id="close-login"></i>
+            <h2>ĐĂNG NHẬP</h2>
+            <form action="#">
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Tài khoản" required>                
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+          </form>
+                <a href="#" class="forgot-password"><p>Quên mật khẩu?</p></a>
+                <a href="HomePage.html"><button type="submit">Đăng nhập</button></a>
+                <p class="not-have-account">Chưa có tài khoản? <a href="#" class="switch" id="switch-to-sign-up">Đăng ký</a></p>
+        </div>
+
+        <div class="form-box sign-up-form" id="sign-up-form">
+            <i class="fa-solid fa-xmark close" id="close-sign-up"></i>
+            <h2>ĐĂNG KÝ</h2>
+            <form action="#">
+                <div class="input-box">
+                    <p>Email</p>
+                    <input type="email" required>
+                </div>
+                <div class="input-box">
+                    <p>Tên tài khoản</p> 
+                    <input type="text" required>
+                </div>
+                <div class="input-box">
+                    <p>Mật khẩu</p>
+                    <input type="password" required>
+                </div>
+                <div class="input-box">
+                    <p>Xác nhận mật khẩu</p>
+                    <input type="password" required>
+                </div>
+            </form>
+            <label for=""><input type="checkbox"> Tôi đồng ý với các <a href="#">Điều khoản & Chính sách</a></label>
+            <button type="submit">Đăng ký</button>
+            <p class="not-have-account">Đã có tài khoản? <a href="#" class="switch" id="switch-to-login">Đăng nhập</a></p>
+        </div>
+
+        <a href="#" class="scroll-up">
+            <i class="fa-sharp fa-solid fa-angle-up"></i>
+        </a>
+
+        <script src="./Script.js"></script>
+        <script>
+
+        </script>       
+        
+    </body>
+</html>    

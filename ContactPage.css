@@ -1,0 +1,136 @@
+.height{
+    height: 130px;
+}
+.main-content{
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 85%;
+    background: rgb(249, 246, 246);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.contact-infor{
+  width: 38%;
+  height: 550px;
+}
+.contact-infor h1,
+.contact-infor h3,
+.contact-infor ul{
+    margin-left: 7%;
+}
+.contact-infor h1{
+    padding-top: 40px;
+}
+.contact-infor h3{
+    margin-top: 20px;
+    color: rgb(63, 58, 58);
+}
+.contact-infor .infor{
+    margin-top: 70px;
+    color: rgb(29, 29, 59);
+}
+.contact-infor .infor li{
+    margin-top: 7%;
+    font-size: 20px;
+}
+.contact-infor .page-link{
+    margin-top: 140px;
+    font-size: 35px;
+    padding-bottom: 3%;
+    margin-left: 30px;
+    height: 40px;
+}
+.contact-infor .page-link li{
+   display: inline-block;
+   padding: 10px;
+}   
+.contact-infor .page-link li img{
+    height: 40px;
+ }   
+.contact-form{
+    width: 58%;
+    background: rgb(255, 255, 255);
+    height: 510px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(156, 149, 149);
+}
+.user-infor{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.contact-form .user-infor .user-infor-element{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input{
+    border: 1px solid rgb(156, 149, 149);
+    width: 290px;
+    height: 30px;
+    border-radius: 5px;   
+    margin-top: 3px;
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(156, 149, 149);
+}
+.contact-form .name-address li{
+    display: inline-block;
+}
+.contact-form .name-address .address{
+    margin-left: 31%;
+}
+.contact-form .email-phone{
+    margin-top: 20px;
+}
+.contact-form .email-phone li{
+    display: inline-block;
+}
+.contact-form .email-phone .phone{
+    margin-left: 31%;
+}
+.contact-form .message{
+    margin-top: 40px;
+    margin-left: 5%;
+}
+.contact-form .message h3{
+   font-weight: lighter;
+}
+.contact-form .message textarea{
+    resize: none;
+    border: 1px solid rgb(156, 149, 149);
+    border-radius: 5px;
+    margin-top: 3px;
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(156, 149, 149);
+}
+.contact-form .send-btn{
+    height: 35px;
+    width: 135px;
+    border: none;
+    margin-left: 77%;
+    margin-top: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: yellowgreen;
+    color: white;
+}
+.contact-form .message .send-btn i{
+    font-size: 15px;
+}
+.scroll-up{
+    position: fixed;
+    left: 100%;
+    top: 89%;
+    width: 55px;
+    background: blue;
+    text-align: center;
+    border-radius: 7px 0 0 0;
+    background: rgb(83, 79, 79);
+    transition: ease 0.4s;
+  }
+  .scroll-up i{
+    font-size: 35px;
+    color: white;
+}
+
+

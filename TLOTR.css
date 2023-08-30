@@ -1,0 +1,272 @@
+.height{
+    height: 130px;
+    width: 100%;
+}
+body{
+    background: whitesmoke;
+}
+.container{
+    margin-top: 30px;
+    width: 64%;
+    margin-left: 18%;
+    padding: 10px;
+}
+.book-information{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
+    background: white;  
+}    
+.book-information .book-cover{
+    width: 22%;
+}
+.book-information .book-cover img{
+    height: 300px;
+}
+.detail-information h1{
+    font-weight: lighter;
+}
+.detail-information h3{
+    margin-top: 5px;
+    font-weight: lighter;
+}
+.detail-information .rating{
+    display: flex;
+    margin-top: 17px;
+}
+.detail-information .rating h1{
+    font-size: 43px;
+    height: 42px;
+    color: rgb(41, 38, 38);
+}
+.detail-information .rating ul {
+    margin-left: 20px;
+}
+.detail-information .rating ul li{
+    margin-top: 4px;
+}
+.detail-information .rating ul li i{
+    color: rgb(243, 196, 108);
+    
+}
+.detail-information .genre{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 17px;
+}
+.user-action{
+    margin-top: 17px;
+}
+.user-action button{
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.user-action .add-to-cart-button{
+    width: 210px;
+}
+.user-action .buy-now-button{
+    width: 150px;
+    color: white;
+    background: yellowgreen;
+    margin-left: 25px;
+}
+.price{
+    margin-top: 17px;
+}
+.price h1{
+    font-size: 45px;
+    color: #ee4d2d;
+    font-weight: lighter;
+}
+.book-introduction{
+    /* margin-top: 30px; */
+    background: white; 
+    padding: 10px; 
+}
+.book-introduction h3{
+    font-weight: 600;
+}
+.book-introduction .introduction-content{
+    display: none;
+}
+#show-more-checkbox{
+    display: none;
+}
+.book-introduction label{
+    font-style: italic;
+    color: rgb(116, 111, 111);
+    cursor: pointer;
+}
+#show-more-checkbox:checked ~ .introduction-content{
+    display: block;
+    transition: all ease 0.4s;
+}
+#show-more-checkbox:checked ~ label{
+    display: none;
+}
+.comments-section{
+    margin-top: 30px;
+}
+.comments-head{
+    display: flex;
+    border-bottom: 1px solid rgb(179, 166, 166);
+    padding-bottom: 15px;
+    background: white;
+    padding: 20px;
+}
+.comments-head ul{
+    margin-left: 67%;
+}
+.comments-head ul li{
+    display: inline-block;
+}
+.comments-section ul li select{
+    height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(81, 77, 77);
+}
+.comments ul li select option{
+    border-radius: 0px;
+}
+.comments{
+    margin-top: 0px;
+    background: white;
+    padding: 20px;
+    padding-top: 20px;  
+}
+.user-comment-wrapper .dang-button-wrapper{
+    display: flex;
+    justify-content: end;
+    padding: 8px 0px 8px 0px;
+    /* background: whitesmoke; */
+}
+.user-comment-wrapper .dang-button-wrapper button{
+    height: 30px;
+    width: 80px;
+    background: rgb(109, 109, 249);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.user-comment{
+    display: flex;
+}
+.user-comment img{
+    height: 40px;
+}
+.user-comment input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgb(179, 166, 166);
+    width: 95%;
+    margin-left: 1%;
+    font-size: 16px;
+}
+.comments .reader-comment{
+    margin-top: 25px;
+    display: flex;
+}
+.comments .reader-comment img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.comments .reader-comment ul{
+    margin-left: 4px;
+}
+.comments .reader-comment ul li i{
+    color: rgb(243, 196, 108);
+}
+.reader-comment ul li ul li{
+    display: inline-block;
+}
+.comment-infor .reader-name{
+    font-weight: bold;
+}
+.comment-infor .comment-time{
+    font-size: 13px;
+    font-style: italic;
+    /* margin-left: 70%; */
+}
+.comment-infor .reader-rating{
+    position: absolute;
+    margin-left: 49%;
+}
+.reader-comment .like-reply{
+    margin-top: 6px;
+}
+.reader-comment .like-reply li{
+    margin-left: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: lighter;
+    color: rgb(99, 99, 209);
+}
+.reader-comment .like-reply li:hover{
+    color: rgb(158, 158, 204);
+}
+.reader-comment .the-comment{
+    margin-left: 4px;
+}
+.show-more-comment-button{
+    margin-top: 20px;
+    width: 92%;
+    height: 40px;
+    margin-left: 4%;
+    cursor: pointer;
+    background: rgb(109, 109, 249);
+    color: white;
+    font-size: 17px;
+}
+.show-more-comment-button:hover{
+    background: rgb(102, 102, 251);
+}
+.tuong-tu{
+    margin: 50px;
+}
+.tuong-tu ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.tuong-tu ul li{
+    padding: 10px;
+    border: 1px solid antiquewhite;
+}
+.tuong-tu ul li:hover{
+    transform: scale(1.1);
+    transition: all ease 0.4s;
+}
+.tuong-tu ul li a img{
+    height: 240px;
+}
+.tuong-tu ul li a h4, h5{
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(62, 60, 60);
+}
+.tuong-tu ul li a h4:hover,
+.tuong-tu ul li a h5:hover{
+    text-decoration: underline;
+}
+.see-more{
+    left: 750px;
+    bottom: 15px;
+    border: 2px solid yellowgreen;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+}
+

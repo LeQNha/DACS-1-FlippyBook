@@ -1,0 +1,132 @@
+body{
+    background: whitesmoke;
+}
+.height{
+    height: 130px;
+}
+ul.path{
+    margin-left: 14%;
+    margin-top: 20px;
+}
+ul.path li{
+    display: inline-block;
+}
+ul.path li a{
+    color: black;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+}
+.table table tbody tr td img{
+    height: 100px;
+    margin-left: 35px;
+}
+.table table thead tr th{
+    text-align: left;
+}
+.table table tr td{
+   width: 200px;
+}
+.table table thead tr th{
+    height: 50px;
+    background: rgb(240, 238, 235);
+}
+.table .remove{
+    width: 100px;   
+    cursor: pointer;
+}
+td{
+    height: 120px;
+    background: white;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+}
+table{
+    border-left: 1px solid black;
+    border-right: 1px solid black   ;
+}
+.table tr td input{
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: 0 0 3px rgb(159, 147, 147);
+    width: 60px;
+    font-size: 15px;
+    text-align: center;
+}
+.quantity ul{
+   display: flex;
+}
+.increase-decrease {
+    padding-left: 1px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+}
+.increase-decrease li{
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid black;
+}
+.increase-decrease li:hover{
+    background: rgb(237, 232, 232);
+}
+.pay{
+    position: relative;
+    width: 85%;
+    margin-top: 155px;
+}
+.pay .total-price{
+    display: flex;
+    justify-content: end;
+    height: 40px;
+}
+.pay .total-price p{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    color: #ee4d2d;
+}
+.pay button{
+    height: 50px;
+    width: 200px;
+    margin-left: 83%;
+    cursor: pointer;
+    background: yellowgreen;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px black;
+}
+.scroll-up{
+    position: fixed;
+    left: 100%;
+    top: 89%;
+    width: 55px;
+    background: blue;
+    text-align: center;
+    border-radius: 7px 0 0 0;
+    background: rgb(83, 79, 79);
+    transition: ease 0.4s;
+  }
+  .scroll-up i{
+    font-size: 35px;
+    color: white;
+}
+
+
+
+
+

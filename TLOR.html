@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TLOR</title>
+        <meta charset="utf-8">
+        <!-- link slider css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="TLOTR.css">
+        <link rel="stylesheet" href="HomePage.css">
+        <link rel="stylesheet" href="Images/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+    
+        <div class="cover-div" id="cover-div"></div>
+        <!-- <section class="filter-sidebar" id="filter-sidebar"> -->
+            <div class="filter-sidebar" id="filter-sidebar">
+                <i class="fa-solid fa-angle-left sidebar-hide" id="sidebar-hide"></i>
+                <button id="btn">Tìm kiếm</button>
+                <h3>Thể Loại</h3>
+                <h4>Hư Cấu</h4>
+                <ul class="hu-cau-submenu">
+                    <li><input type="checkbox"> Giả tưởng</li>
+                    <li><input type="checkbox"> Khoa học viễn tưởng</a></li>
+                    <li><input type="checkbox"> Lãng mạn</li>
+                    <li><input type="checkbox"> Kinh dị</li>
+                    <li><input type="checkbox"> Manga</li>
+                    <li><input type="checkbox"> Comic</li>
+                    <li><input type="checkbox"> Trinh thám</li>
+                    <li><input type="checkbox"> Cổ tích - Ngụ ngôn</li>
+                    <li><input type="checkbox"> Dã Sử</li>
+                    <li><input type="checkbox"> Light Novel</li>
+                    <li><input type="checkbox"> Phiêu lưu</li>
+                    <li><input type="checkbox"> Thiếu nhi</li>
+                    <li><input type="checkbox"> Hài hước</li>
+                    <li><input type="checkbox"> Huyền bí</li>
+                    <li><input type="checkbox"> Khác</li>
+                </ul>
+                <h4>Phi hư cấu</h4>
+                <ul class="phi-hu-cau-submenu">
+                    <li><input type="checkbox"> Kinh tế</li>
+                    <li><input type="checkbox"> Tâm lý - Giáo dục</li>
+                    <li><input type="checkbox"> Lịch sử - Địa lý</li>
+                    <li><input type="checkbox"> Y học -Sức khỏe</li>
+                    <li><input type="checkbox"> Khoa học</li>
+                    <li><input type="checkbox"> Triết học</li>
+                    <li><input type="checkbox"> Nghệ thuật</li>
+                    <li><input type="checkbox"> Tôn giáo</li>
+                    <li><input type="checkbox"> Ẩm thực</li>
+                    <li><input type="checkbox"> Công nghệ</li>
+                    <li><input type="checkbox"> Tự nhiên</li>
+                    <li><input type="checkbox"> Gia đình</li>
+                    <li><input type="checkbox"> Thẩm mỹ</li>
+                    <li><input type="checkbox"> Khác</li>
+                </ul>
+                <h3>Giá cả</h3>
+                <ul class="gia-ca-submenu">
+                    <li><input type="checkbox"> Giảm giá</li>
+                    <li><input type="checkbox"> Miễn phí</li>
+                </ul>
+                <h3>Đánh giá</h3>
+                <ul class="danh-gia-submenu">
+                    <li><input type="checkbox"> > 4.5 <i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><input type="checkbox"> > 4.0 <i class="fa-sharp fa-solid fa-star"></i></li>
+                    <li><input type="checkbox"> > 3.5 <i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+                <h3>Quốc gia</h3>
+                <ul class="quoc-gia-submenu">
+                    <li><input type="checkbox"> Trong nước</li>
+                    <li><input type="checkbox"> Ngoài nước</li>
+                </ul>
+                <h3>Mô tả</h3>
+                <textarea name="mo-ta-textare" id="mo-ta-textare"></textarea>
+            </div>
+        <!-- </section> -->
+        
+        <header class="header" id="header">
+            <div class="header-1">
+                <a href="HomePage.html" class="logo">
+                    <img src="./Images/Logo-Flippy-Book-3.png" alt="logo" class="logo">
+                </a>
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="Tên sách, tác giả..." id="search-box">
+                    <label for="search-box" class="fas-fa-search"><i class="fa-solid fa-magnifying-glass"></i></label>         
+                </form>
+                
+                <div class="account"> 
+                    <ul> 
+                        <li>
+                          <a href="CartPage.html"><img src="./Images/cart.png" alt="" class="cart"></a>
+                          <div class="so-hang">4</div>  
+                        </li>                     
+                        <li>
+                            <a href="#" class="dang-nhap" id="dang-nhap">ĐĂNG NHẬP</a>
+                        </li>
+                        <li>
+                            <a href="#" class="dang-ky" id = "dang-ky">ĐĂNG KÝ </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <img src="./Images/filter.png" alt=""  class="toggle-btn" id="toggle-btn">
+                <a href="HomePage.html">TRANG CHỦ</a>
+                <!-- <a href="#ke-sach">KỆ SÁCH</a> -->
+                <a href="#xep-hang">XẾP HẠNG</a>
+                <!-- <a href="#dich-vu">DỊCH VỤ</a> -->
+                <a href="OldBookPage.html">SÁCH CŨ</a>
+                <a href="ContactPage.html">LIÊN HỆ</a>
+                <!-- <a href="#">GIỚI THIỆU</a> -->
+            </nav>
+        </header>
+        <div class="height"></div>   
+
+
+        <div class="container">
+        <div class="book-information" >
+            <div class="book-cover">
+                <img src="./Images/TLOR_rotk.gif" alt="">
+            </div>
+            <div class="detail-information">
+                <div>
+                    <h1>The Lord Of The Rings: The Return Of The King</h2>
+                    <h3>J. R. R. Tolkien</h4>
+                </div>
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <ul class="rating-star">
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </li>
+                        <li>823 lượt đánh giá</li>
+                    </ul>
+                </div>
+                <div class="genre">
+                    <p>Phiêu lưu</p>
+                    <p>Kỳ ảo</p>
+                    <p>Hành động</p>
+                </div>
+                <div class="price">
+                    <h1>₫310 000</h1>
+                </div>
+                <div class="user-action">
+                    <button class="add-to-cart-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Thêm vào giỏ hàng
+                    </button>
+                    <button class="buy-now-button">
+                        Mua Ngay
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="book-introduction">
+            <input id="show-more-checkbox" type="checkbox">
+            <h3>Giới thiệu</h3>
+            <p>
+                <br>
+                "Chúa tể những chiếc nhẫn: Sự trở về của nhà vua" là cuốn tiểu thuyết viết bởi tác giả J.R.R. Tolkien, xuất bản lần đầu vào năm 1955. Đây là phần thứ tư và cũng là cuối cùng trong bộ tiểu thuyết "Chúa tể những chiếc nhẫn".
+            </p>
+            <label for="show-more-checkbox">Hiện thêm</label>
+            <div class="introduction-content">
+                <p>
+                    <br>
+                    Trong "Sự trở về của nhà vua", chúng ta được theo dõi chuyển biến của vương quốc Gondor sau khi Aragorn trở thành vua và giúp đỡ chống lại kẻ thù Sauron. Cuốn tiểu thuyết tập trung vào nhân vật Denethor, người đã trở thành người đứng đầu Gondor sau khi người cha của Aragorn qua đời. Chính vì căng thẳng và áp lực từ chiến tranh và sự trở lại của Aragorn, Denethor đã dần trở nên phân liệt và dẫn đến một kết cục đáng tiếc.
+                </p>
+                <p>
+                    <br>
+                    Cuốn tiểu thuyết này vẫn tiếp tục mang tính chất phiêu lưu, hấp dẫn như những phần trước đó của bộ tiểu thuyết. Nó tiếp tục khai thác tinh túy về thế giới giả tưởng của Tolkien, với mô tả chi tiết về các nhân vật và thế giới mà họ sống. "Chúa tể những chiếc nhẫn: Sự trở về của nhà vua" là một trong những tác phẩm đặc sắc của Tolkien, đáng để đọc cho những người yêu thích thể loại tiểu thuyết giả tưởng và phiêu lưu.
+                </p>
+                <label for="show-more-checkbox">Ẩn bớt</label>
+            </div>
+        </div>
+        <div class="comments-section">
+            <div class="comments-head">
+                <h4>37 bình luận</h4>
+                <ul>
+                    <li>Sắp xếp theo</li>
+                    <li>
+                        <select name="comment-filler" id="comment-filler">
+                            <option value="op1">Mới nhất</option>
+                            <option value="op2">Cũ nhất</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="comments">
+                <div class="user-comment-wrapper">
+                    <div class="user-comment">
+                        <img src="./Images/avatar.png" alt="">
+                        <input type="text" placeholder="Viết bình luận...">
+                    </div>
+                    <div class="dang-button-wrapper">
+                        <button>Đăng</button>
+                    </div>    
+                </div>
+                <div class="reader-comments">
+                    <div class="reader-comment">
+                        <img src="./Images/defaultAvatar1.png" alt="">
+                        <ul>
+                            <li class="comment-infor">
+                                <div class="reader-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                </div>
+                                <ul>
+                                    <li class="reader-name">Văn Bảo</li>
+                                    <li class="comment-time">
+                                        30 phút trước
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="the-comment">
+                                <p>Hay quá</p>
+                            </li>
+                            <li>
+                                <ul class="like-reply">
+                                    <li>Thích</li>
+                                    <li>Phản hồi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reader-comment">
+                        <img src="./Images/defaultAvatar2.jpg" alt="">
+                        <ul>
+                            <li class="comment-infor">
+                                <div class="reader-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <ul>
+                                    <li class="reader-name">Nguyễn Ngọc Vũ</li>
+                                    <li class="comment-time">
+                                        3 giờ trước
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="the-comment">
+                                <p>Truyện hay, mọi người nên đọc.</p>
+                            </li>
+                            <li>
+                                <ul class="like-reply">
+                                    <li>Thích</li>
+                                    <li>Phản hồi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reader-comment">
+                        <img src="./Images/defaultAvatar3.png" alt="">
+                        <ul>
+                            <li class="comment-infor">
+                                <div class="reader-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <ul>
+                                    <li class="reader-name">Momon</li>
+                                    <li class="comment-time">
+                                        20/6/2023
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="the-comment">
+                                <p>Mọi người có cuốn sách nào tương tự giới thiệu cho mình với?</p>
+                            </li>
+                            <li>
+                                <ul class="like-reply">
+                                    <li>Thích</li>
+                                    <li>Phản hồi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reader-comment">
+                        <img src="./Images/defaultAvatar4.jpg" alt="">
+                        <ul>
+                            <li class="comment-infor">
+                                <div class="reader-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <ul>
+                                    <li class="reader-name">Dương Dương</li>
+                                    <li class="comment-time">
+                                        15/6/2023
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="the-comment">
+                                <p>Cũng tạm được, không hợp với t lắm</p>
+                            </li>
+                            <li>
+                                <ul class="like-reply">
+                                    <li>Thích</li>
+                                    <li>Phản hồi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reader-comment">
+                        <img src="./Images/defaultAvatar5.png" alt="">
+                        <ul>
+                            <li class="comment-infor">
+                                <div class="reader-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <ul>
+                                    <li class="reader-name">Anh</li>
+                                    <li class="comment-time">
+                                        10/6/2023
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="the-comment">
+                                <p>Hay</p>
+                            </li>
+                            <li>
+                                <ul class="like-reply">
+                                    <li>Thích</li>
+                                    <li>Phản hồi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="show-more-comment-button">
+                    Tải thêm 5 bình luận
+                </button>
+            </div>
+        </div>
+
+        <div class="tuong-tu">
+            <h3>Sách tương tự</h3>
+            <!-- <p class="see-more">Xem thêm</p> -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/wutheringheights.jpg" alt="">
+                        <h4 title=" ">Wuthering Heights</h4>
+                        <h5>Emily Bronte</h5>
+                        <p>₫150 000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/gonewiththewind.jpg" alt="">
+                        <h4 title="Gone With The Wind ">Gone With The Wind </h4>
+                        <h5>Margaret Mitchell</h5>
+                        <p>₫188 000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/War and Peace.jpg" alt="">
+                        <h4 title=" War and Peace "> War and Peace </h4>
+                        <h5> Leo Tolstoy </h5>
+                        <p>₫250 000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/thefellowshipofthering.jpg" alt="">
+                        <h4 title="The Fellowship Of The Ring">The fllowship Of The Ring</h4>
+                        <h5>JRR Tolkien</h5>
+                        <p>₫310 000</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/olivertwist.jpg" alt="">
+                        <h4 title=" Oliver Twist  "> Oliver Twist  </h4>
+                        <h5>Charles Dickens </h5>
+                        <p>₫90 000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/mobydick.jpg" alt="">
+                        <h4 title="Moby Dick ">Moby Dick</h4>
+                        <h5> Herman Melville </h5>
+                        <p>₫85 000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/achristmascarol.jpg" alt="">
+                        <h4 title=" A Christmas Carol "> A Christmas Carol </h4>
+                        <h5> Charles Dickens </h5>
+                        <p>₫80 000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fa-solid fa-plus"></i></div>
+                        <img src="./Images/Sherlock Holmes.jpg" alt="">
+                        <h4 title="The Advantures Of Sherlock Holmes">The Advantures Of Sherlock Holmes</h4>
+                        <h5>Sir Arthur Conan Doyle</h5>
+                        <p>₫165 000</p>
+                    </a>
+                </li>
+            </ul>
+
+            
+        </div>
+    </div>
+
+    <div class="form-box login-form" id="login-form">
+        <i class="fa-solid fa-xmark close" id="close-login"></i>
+        <h2>ĐĂNG NHẬP</h2>
+        <form action="#">
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Tài khoản" required>                
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mật khẩu" required>
+            </div>
+      </form>
+            <a href="#" class="forgot-password"><p>Quên mật khẩu?</p></a>
+            <a href="HomePage.html"><button type="submit">Đăng nhập</button></a>
+            <p class="not-have-account">Chưa có tài khoản? <a href="#" class="switch" id="switch-to-sign-up">Đăng ký</a></p>
+    </div>
+
+    <div class="form-box sign-up-form" id="sign-up-form">
+        <i class="fa-solid fa-xmark close" id="close-sign-up"></i>
+        <h2>ĐĂNG KÝ</h2>
+        <form action="#">
+            <div class="input-box">
+                <p>Email</p>
+                <input type="email" required>
+            </div>
+            <div class="input-box">
+                <p>Tên tài khoản</p> 
+                <input type="text" required>
+            </div>
+            <div class="input-box">
+                <p>Mật khẩu</p>
+                <input type="password" required>
+            </div>
+            <div class="input-box">
+                <p>Xác nhận mật khẩu</p>
+                <input type="password" required>
+            </div>
+        </form>
+        <label for=""><input type="checkbox"> Tôi đồng ý với các <a href="#">Điều khoản & Chính sách</a></label>
+        <button type="submit">Đăng ký</button>
+        <p class="not-have-account">Đã có tài khoản? <a href="#" class="switch" id="switch-to-login">Đăng nhập</a></p>
+    </div>
+
+    <footer class="footer">
+        <div class="company">
+            <img src="./Images/Logo-Flippy-Book-3.png" alt="logo" class="logo">
+            <!-- <h1>P8PR</h3> -->
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>    
+        </div>
+        <div class="footer-item">
+            <ul>
+                <h3>Nội dung</h3>
+                <li><a href="#ke-sach">Kệ sách</a></li>
+                <li><a href="#xep-hang">Xếp hạng</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Thảo luận</a></li>
+            </ul>
+            <ul>
+                <h3>Thông tin</h3>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Hỏi đáp</a></li>
+                    <li><a href="#">Tin tức</a></li>
+            </ul>
+            <ul>
+                <h3>Chính sách</h3>
+                <li><a href="#">Điều khoản & Chính sách</a></li>
+                <li><a href="#">Bảo mật</a></li>
+                <li><a href="#">Khách hàng</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <ul>
+                <h3>Liên hệ</h3>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> 0923 526 642</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> flippybook@gmail.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Trần Đại Nghĩa, Đà Nẵng, Việt Nam</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-up">
+        <i class="fa-sharp fa-solid fa-angle-up"></i>
+    </a>
+
+    <script src="./Script.js"></script>
+    </body>
+</html>
